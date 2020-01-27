@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pallindrome Lab Registeration Form
+    </title>
+    <link rel="stylesheet" href="login form.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <meta name="Cronus">
+</head>
+
+<body>
+    <h2>Summer School Registeration Form </h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <h1>Create Account </h1>
+            <div class="checkbox-radio">
+                <input type="radio" class="radio" name="work" value="student">
+                <p class="student">Student</p><br>
+                <input type="radio" class="radio" name="work" value="student">
+                <p class="professional">Professional</p>
+            </div>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <div>
+                    <h1>Instructions </h1>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <button class="ghost" id="signUp" style="color: black;">Register</button>
+
+
+                </div>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Create Account</h1><br>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name">
+                    <select name="Gender">
+                    <option value="" selected disabled>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female </option>
+                    <option value="Others">Others </option>
+                  </select>
+                    <input type="email" placeholder="Email">
+                    <input placeholder="Phone Number" id="phone" onkeypress="return isNumberKey(event)">
+
+                    <button class="ghost" id="signIn">Back</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Payment Information</h1>
+                    <p>Check out the terms and conditions of the---</p>
+                    <button class="ghost"><a href="#">Know More</a></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+
+    </footer>
+    <script type="text/javascript" src="login form.js">
+    </script>
+</body>
+
+</html>
