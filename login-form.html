@@ -11,15 +11,23 @@
 </head>
 
 <body>
-    <h2>Summer School Registeration Form </h2>
+    <!--<h2>Summer School Registeration Form </h2>--><img src="bg.jpg">
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <h1>Create Account </h1>
-            <div class="checkbox-radio">
-                <input type="radio" class="radio" name="work" value="student">
+            <h1>Register</h1>
+            <div id="checkbox-radio">
+                <input type="radio" class="radio" name="work" value="student" onclick="checkRadio()">
                 <p class="student">Student</p><br>
-                <input type="radio" class="radio" name="work" value="student">
+                <input type="radio" class="radio" name="work" value="professional">
                 <p class="professional">Professional</p>
+            </div>
+            <div class="studentinput">
+                <input type="text" placeholder="Course To be Enrolled">
+                <input type="text" placeholder="College">
+            </div>
+            <div class="professionalinput">
+                <input type="text" placeholder="Professional">
+                <input type="text" placeholder="Professional">
             </div>
         </div>
         <div class="form-container sign-in-container">
@@ -33,23 +41,20 @@
                         <li></li>
                     </ol>
                     <button class="ghost" id="signUp" style="color: black;">Register</button>
-
-
                 </div>
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Create Account</h1><br>
-                    <span>or use your email for registration</span>
+                    <h1>Register</h1><br>
                     <input type="text" placeholder="Name">
-                    <select name="Gender">
-                    <option value="" selected disabled>Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female </option>
-                    <option value="Others">Others </option>
-                  </select>
+                    <select class="gender">
+                        <option selected disabled>Gender</option>
+                        <option class="option">Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
                     <input type="email" placeholder="Email">
                     <input placeholder="Phone Number" id="phone" onkeypress="return isNumberKey(event)">
 
