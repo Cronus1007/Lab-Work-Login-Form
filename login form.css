@@ -166,12 +166,12 @@ input>select {
 .sign-up-container #checkbox-radio {
     position: relative;
     padding-top: 0px;
-    transform: scale(0.7);
+    transform: scale(0.6);
 }
 
 .sign-up-container #checkbox-radio .student {
     display: inline-block;
-    font-size: 24px;
+    font-size: 36px;
     position: absolute;
     margin-top: 25px;
     padding-left: 10px;
@@ -179,7 +179,7 @@ input>select {
 
 .sign-up-container #checkbox-radio .professional {
     display: inline-block;
-    font-size: 24px;
+    font-size: 36px;
     position: absolute;
     margin-top: 25px;
     padding-left: 10px;
@@ -353,19 +353,29 @@ footer a {
 }
 
 .studentinput {
-    background: #1337fe;
     display: none;
 }
 
+.studentinput input {
+    border: 2px inset rgb(0, 27, 255);
+    width: 75%;
+    margin-left: 10%;
+}
+
 .professionalinput {
-    background: #1337fe;
     display: none;
+}
+
+.professionalinput input {
+    border: 2px inset rgb(0, 27, 255);
+    width: 75%;
+    margin-left: 10%;
 }
 
 .gender {
     width: 100%;
     border-radius: 20px;
-    height: 35px;
+    height: 40px;
     padding-left: 13px;
 }
 
@@ -373,4 +383,22 @@ footer a {
     border-radius: 20px;
     border: 0px;
     border-bottom: 1px solid black;
+}
+
+.submit {
+    position: absolute;
+    top: 85%;
+    left: 27%;
+    background: transparent;
+    border-color: white;
+    display: none;
+}
+
+#phone {
+    position: relative;
+    margin-top: -0.75%;
+}
+
+.overlay-left input {
+    border: 2px inset white;
 }
