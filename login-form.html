@@ -15,6 +15,7 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <h1>Register</h1>
+
             <div id="checkbox-radio">
                 <input type="radio" class="radio" name="work" value="student" onclick="checkRadio()">
                 <p class="student">Student</p><br>
@@ -29,7 +30,8 @@
                 <input type="text" id="compName" placeholder="Company Name">
                 <input type="text" id="title" placeholder="Title">
             </div>
-            <button type="submit" class="submit" onclick="submitForm()">Submit</button>
+            <button type="submit" class="submit" onclick="formValidation()" onsubmit="submitForm()">Submit</button>
+
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
@@ -57,7 +59,7 @@
                         <option>Others</option>
                     </select>
                     <input type="email" id="email" placeholder="Email">
-                    <input placeholder="Phone Number: (ISD)-Number" id="phone" onkeypress="return isNumberKey(event)">
+                    <input placeholder="Phone Number: (ISD)-Number" id="phone" type="text" onkeypress="return isNumberKey(event)">
 
                     <button class="ghost" id="signIn">Back</button>
                 </div>
